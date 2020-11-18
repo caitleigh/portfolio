@@ -1,0 +1,17 @@
+body {
+
+  background-color: black;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(255, 230, 0);
+  font-size: 40px;
+  /* text-transform: uppercase; */
+}
+
+p {
+    color: rgb(255, 230, 0);
+    font-size: 50px;
+    font-weight: 900;
+}

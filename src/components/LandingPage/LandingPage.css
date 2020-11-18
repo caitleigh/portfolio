@@ -1,0 +1,291 @@
+
+/* -------- BACKGROUND -------- */
+.gradient {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* color: #fff; */
+    background: linear-gradient(-70deg, rgb(82, 81, 81), rgba(0, 0, 0, 1), rgb(80, 79, 79), rgba(0, 0, 0, 1));
+    background-size: 800% 800%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite;
+}
+
+/* -------- PAGE CONTENT -------- */
+.title {
+    position: relative;
+    padding-top: 34vh;
+    width: fit-content;
+    margin: auto;
+    clear: both;
+    animation: fadeIn ease 15s;
+    -webkit-animation: fadeIn ease 15s;
+    -moz-animation: fadeIn ease 15s;
+    -o-animation: fadeIn ease 15s;
+    -ms-animation: fadeIn ease 15s;
+}
+
+.title h1 {
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    margin-right: -15px;
+    margin-bottom: 0;
+    font-family: 'Antic Didone',
+        serif;
+    font-weight: lighter;
+    font-size: 40px;
+    /* font-size: 4vw; */
+    color: white;
+    text-shadow: 3px 1px grey;
+    text-transform: uppercase;
+    letter-spacing: 15px !important;
+}
+
+.title h2 {
+    width: 100%;
+    position: relative;
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+    padding-right: 15px;
+    font-size: 1em;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.title h3 {
+    width: 100%;
+    position: relative;
+    font-size: 8px;
+    font-family: 'Antic Didone',
+        serif;
+    color: rgb(224, 224, 224);
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.view-work-container {
+    width: 100%;
+    height: 200px;
+    position: fixed;
+    bottom: 0 !important;
+    margin: 120px auto 0 auto;
+    bottom: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.view-work {
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 5%;
+    padding: 20px 30px;
+    background-color: rgba(128, 128, 128, 0.205);
+    animation: slideUp 5s linear;
+    -webkit-animation: slideUp ease 5s;
+    -moz-animation: slideUp ease 5s;
+    -o-animation: slideUp ease 5s;
+    -ms-animation: slideUp ease 5s;
+}
+
+.view-work button {
+    background-color: transparent;
+    padding: none;
+    border: none;
+    font-family: 'Antic Didone',
+        serif;
+    font-size: 20px;
+    color: white;
+
+}
+
+.view-work:hover {
+    filter: drop-shadow(5px 4px rgba(255, 255, 255, 0.322));
+    cursor: pointer;
+}
+
+.view-work button:hover {
+    cursor: pointer;
+}
+
+.view-work-line {
+    overflow-y: hidden;
+    width: 1px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.541);
+    height: 70vh;
+    bottom: 0;
+}
+
+/* ====== ANIMATION SETTINGS ====== */
+
+/* Gradient */
+
+@-webkit-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+
+/* fadeIn */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/* slideUp */
+
+@keyframes slideUp {
+
+    0% {
+        margin-top: 500px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+
+}
+
+@-moz-keyframes slideUp {
+    0% {
+        margin-top: 500px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        margin-top: 500px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@-o-keyframes slideUp {
+    0% {
+        margin-top: 500px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+@-ms-keyframes slideUp {
+    0% {
+        margin-top: 500px;
+    }
+
+    100% {
+        margin-top: 0px;
+    }
+}
+
+/* -------- MEDIA QUERIES -------- */
+
+@media (max-width: 374px) {
+
+    body {
+        width: 350px;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+}
