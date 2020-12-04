@@ -4,6 +4,7 @@ import './App.css';
 //components 
 
 import LandingPage from '../LandingPage/LandingPage'
+import HomePage from '../HomePage/HomePage'
 // import Footer from '../Footer/Footer'
 
 class App extends React.Component {
@@ -38,15 +39,9 @@ class App extends React.Component {
 
     if (this.state.landing === 'off') {
       return (
-        <p>This will be the home</p>
+        <HomePage />
       )
     }
-    return (
-      <>
-        <LandingPage landingToggle={this.state.landing} click={this.handleLanding} />
-      </>
-
-    );
   }
 }
 
