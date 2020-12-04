@@ -1,24 +1,23 @@
 import React from 'react';
-import { BrowserRouter, Route, Redirect } from 'react-router-dom'
 
 import './LandingPage.css'
 
 class LandingPage extends React.Component {
 
-    state = {
-        redirect: false
-    }
 
-    setRedirect = () => {
-        this.setState({
-            redirect: true
-        })
-    }
+    constructor(props) {
+        super(props)
 
-    renderViewWork = () => {
-        if (this.state.redirect) {
-            return <Redirect to='../ViewWork/ViewWork' />
+        this.state = {
+            landing: 'on'
         }
+        // this.renderHomePage = this.renderHomePage.bind(this)
+    }
+
+
+    renderHomePage = async () => {
+        await this.setState({ landing: 'off' })
+        this.props.click(this.state.landing)
     }
 
     render() {
@@ -26,22 +25,24 @@ class LandingPage extends React.Component {
             <>
                 <div className="gradient">
                 </div>;
+                <div className="content">
                 <div className="title">
                     <h1>Rogueland</h1>
                     <h2>Web Designs</h2>
                     <h3>By Cait Rowland</h3>
                 </div>
 
-                <div className="view-work-container" href='../ViewWork/ViewWork.js'>
+                <div className="view-work-container">
                     <section
                         className="view-work">
 
-                        <button onClick={this.setRedirect}>Under Construction</button>
+                        <button onClick={this.renderHomePage}>Under Construction</button>
                     </section>
                     <section className="view-work-line">
 
                     </section>
 
+                    </div>
                 </div>
             </>)
     }
