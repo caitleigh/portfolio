@@ -6,7 +6,7 @@ import './App.css';
 import LandingPage from '../LandingPage/LandingPage'
 // import Footer from '../Footer/Footer'
 
-class App extends React.Component{
+class App extends React.Component {
 
   constructor(props) {
     super(props)
@@ -14,40 +14,36 @@ class App extends React.Component{
       landing: 'on'
     }
 
-            this.handleLanding = this.handleLanding.bind(this)
+    this.handleLanding = this.handleLanding.bind(this)
   }
 
 
   handleLanding(payload) {
     if (this.state.landing === 'on') {
-      console.log('in if')
       this.setState({
         landing: payload
       })
     }
   }
 
-  toggleView() {
-    console.log("in toggle")
-    if (this.state.landing === "on") {
-
-    } else {
-      
-    }
-  }
 
   render() {
+
+    if (this.state.landing === 'on') {
+      return (
+        <LandingPage landingToggle={this.state.landing} click={this.handleLanding} />
+      )
+
+    }
+
+    if (this.state.landing === 'off') {
+      return (
+        <p>This will be the home</p>
+      )
+    }
     return (
       <>
-        {/* <p>/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /</p>
-
-      <h1>Portfolio Under Construction</h1>
-      
-      <p>/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /</p> */}
-        <LandingPage landingToggle={this.state.landing} click={this.handleLanding}/>
-
-        {/* <Footer/> */}
-
+        <LandingPage landingToggle={this.state.landing} click={this.handleLanding} />
       </>
 
     );
