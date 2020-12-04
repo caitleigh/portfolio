@@ -18,7 +18,7 @@
 }
 .title {
     position: relative;
-    padding-top: 34vh;
+    padding-top: 20vh;
     width: fit-content;
     margin: auto;
     animation: fadeIn ease 15s;
