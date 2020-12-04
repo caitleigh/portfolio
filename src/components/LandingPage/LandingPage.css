@@ -1,10 +1,8 @@
-
 /* -------- BACKGROUND -------- */
 .gradient {
     position: fixed;
     width: 100%;
     height: 100%;
-    /* color: #fff; */
     background: linear-gradient(-70deg, rgb(82, 81, 81), rgba(0, 0, 0, 1), rgb(80, 79, 79), rgba(0, 0, 0, 1));
     background-size: 800% 800%;
     -webkit-animation: Gradient 10s ease infinite;
@@ -13,12 +11,16 @@
 }
 
 /* -------- PAGE CONTENT -------- */
+
+.content {
+    overflow: hidden;
+    height: 100%;
+}
 .title {
     position: relative;
     padding-top: 34vh;
     width: fit-content;
     margin: auto;
-    clear: both;
     animation: fadeIn ease 15s;
     -webkit-animation: fadeIn ease 15s;
     -moz-animation: fadeIn ease 15s;
@@ -35,8 +37,7 @@
     font-family: 'Antic Didone',
         serif;
     font-weight: lighter;
-    font-size: 40px;
-    /* font-size: 4vw; */
+    font-size: 60px;
     color: white;
     text-shadow: 3px 1px grey;
     text-transform: uppercase;
@@ -70,13 +71,10 @@
 
 .view-work-container {
     width: 100%;
-    height: 200px;
-    position: fixed;
-    bottom: 0 !important;
-    margin: 120px auto 0 auto;
-    bottom: 0;
+    height: 300px;
+    position: relative;
+    margin: 175px auto 0 auto;
     overflow: hidden;
-    clear: both;
 }
 
 .view-work {
