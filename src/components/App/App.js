@@ -4,7 +4,9 @@ import './App.css';
 //components 
 
 import LandingPage from '../LandingPage/LandingPage'
-import HomePage from '../HomePage/HomePage'
+
+import Header from '../Header/Header'
+import Portfolio from '../Portfolio/Portfolio'
 // import Footer from '../Footer/Footer'
 
 class App extends React.Component {
@@ -30,16 +32,33 @@ class App extends React.Component {
 
   render() {
 
+    //Landing Page only
+    // return (
+    //   <div className="gradient">
+    //     <LandingPage />
+    //   </div>
+    // )
+
     if (this.state.landing === 'on') {
       return (
-        <LandingPage landingToggle={this.state.landing} click={this.handleLanding} />
+        <>
+          <div className="gradient">
+          </div>
+
+          <LandingPage landingToggle={this.state.landing} click={this.handleLanding} />
+        </>
       )
 
     }
 
     if (this.state.landing === 'off') {
       return (
-        <HomePage />
+        <>
+          <div className="gradient">
+          </div>
+          <Header />
+          <Portfolio />
+        </>
       )
     }
   }

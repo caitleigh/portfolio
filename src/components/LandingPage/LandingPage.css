@@ -1,20 +1,14 @@
-/* -------- BACKGROUND -------- */
-.gradient {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-70deg, rgb(82, 81, 81), rgba(0, 0, 0, 1), rgb(80, 79, 79), rgba(0, 0, 0, 1));
-    background-size: 800% 800%;
-    -webkit-animation: Gradient 10s ease infinite;
-    -moz-animation: Gradient 10s ease infinite;
-    animation: Gradient 10s ease infinite;
-}
-
 /* -------- PAGE CONTENT -------- */
 
 .content {
-    overflow: hidden;
     height: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
 }
 .title {
     position: relative;
@@ -37,7 +31,7 @@
     font-family: 'Antic Didone',
         serif;
     font-weight: lighter;
-    font-size: 60px;
+    font-size: 5vw;
     color: white;
     text-shadow: 3px 1px grey;
     text-transform: uppercase;
@@ -49,6 +43,7 @@
     position: relative;
     color: white;
     margin-top: 0;
+    margin-bottom: 5px;
     padding-top: 0;
     padding-right: 15px;
     font-size: 1em;
@@ -65,6 +60,7 @@
         serif;
     color: rgb(224, 224, 224);
     text-transform: uppercase;
+    margin-top: 0;
     margin-bottom: 0;
     text-align: right;
 }
@@ -72,9 +68,9 @@
 .view-work-container {
     width: 100%;
     height: 325px;
-    position: relative;
-    margin: 100px auto 0 auto;
-    overflow: hidden;
+    position: fixed;
+    margin: 10% auto 0 auto;
+    /* overflow: hidden; */
 }
 
 .view-work {
@@ -121,50 +117,6 @@
 }
 
 /* ====== ANIMATION SETTINGS ====== */
-
-/* Gradient */
-
-@-webkit-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@-moz-keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
-
-@keyframes Gradient {
-    0% {
-        background-position: 0% 50%
-    }
-
-    50% {
-        background-position: 100% 50%
-    }
-
-    100% {
-        background-position: 0% 50%
-    }
-}
 
 
 /* fadeIn */
@@ -276,14 +228,21 @@
 
 /* -------- MEDIA QUERIES -------- */
 
-@media (max-width: 374px) {
-
-    body {
-        width: 350px;
-    }
+@media (max-width: 484px) {
 
     .title h1 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
+    .view-work-container {
+        bottom: 0;
+        margin-top: 30%;
+    }
+
+}
+
+@media (max-width: 325px) {
+    .title h1 {
+        font-size: 25px;
+    }
 }
