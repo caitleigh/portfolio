@@ -39,28 +39,38 @@ class App extends React.Component {
     //   </div>
     // )
 
-    if (this.state.landing === 'on') {
-      return (
-        <>
-          <div className="gradient">
-          </div>
 
-          <LandingPage landingToggle={this.state.landing} click={this.handleLanding} />
-        </>
-      )
+    //PORTFOLIO PAGE ONLY 
 
-    }
+    return (
+      <div className="gradient">
+        <Header />
+        <Portfolio />
+      </div>
+    )
 
-    if (this.state.landing === 'off') {
-      return (
-        <>
-          <div className="gradient">
-          </div>
-          <Header />
-          <Portfolio />
-        </>
-      )
-    }
+    // if (this.state.landing === 'on') {
+    //   return (
+    //     <>
+    //       <div className="gradient">
+    //       </div>
+
+    //       <LandingPage landingToggle={this.state.landing} click={this.handleLanding} />
+    //     </>
+    //   )
+
+    // }
+
+    // if (this.state.landing === 'off') {
+    //   return (
+    //     <>
+    //       <div className="gradient">
+    //       </div>
+    //       <Header />
+    //       <Portfolio />
+    //     </>
+    //   )
+    // }
   }
 }
 

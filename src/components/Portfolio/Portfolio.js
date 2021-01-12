@@ -1,6 +1,9 @@
 import React from 'react'
 import './Portfolio.css'
 
+//Tiles
+import About from '../Tiles/About/About'
+
 const Portfolio = () => {
 
     //TO DO: 
@@ -9,8 +12,10 @@ const Portfolio = () => {
         //3: Do same for projects
 
     return (
-        <div class="homePage">
-            <p>HOME PAGE</p>
+        <div className="homePage">
+            <div className="tiles"> 
+            <About/>
+            </div>
         </div>
 
     )
