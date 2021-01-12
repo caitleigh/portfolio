@@ -1,0 +1,36 @@
+body {
+    background-color: transparent;
+}
+
+.logo {
+    width: 260px;
+    margin: 10px;
+    top: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.logo h1{
+    font-family: 'Antic Didone',
+    serif;
+    font-weight: lighter;
+    font-size: 25px;
+    color: white;
+    text-shadow: 3px 1px grey;
+    text-transform: uppercase;
+    letter-spacing: 15px !important;
+    margin: 0;
+}
+
+.logo h2 {
+        width: 100%;
+        position: relative;
+        color: white;
+        margin-top: 0;
+        padding-top: 0;
+        padding-right: 15px;
+        font-size: 12px;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-align: right;
+}

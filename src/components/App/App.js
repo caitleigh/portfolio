@@ -4,9 +4,12 @@ import './App.css';
 //components 
 
 import LandingPage from '../LandingPage/LandingPage'
+
+import Header from '../Header/Header'
+import Portfolio from '../Portfolio/Portfolio'
 // import Footer from '../Footer/Footer'
 
-class App extends React.Component{
+class App extends React.Component {
 
   constructor(props) {
     super(props)
@@ -14,43 +17,60 @@ class App extends React.Component{
       landing: 'on'
     }
 
-            this.handleLanding = this.handleLanding.bind(this)
+    this.handleLanding = this.handleLanding.bind(this)
   }
 
 
   handleLanding(payload) {
     if (this.state.landing === 'on') {
-      console.log('in if')
       this.setState({
         landing: payload
       })
     }
   }
 
-  toggleView() {
-    console.log("in toggle")
-    if (this.state.landing === "on") {
-
-    } else {
-      
-    }
-  }
 
   render() {
+
+    //Landing Page only
+    // return (
+    //   <div className="gradient">
+    //     <LandingPage />
+    //   </div>
+    // )
+
+
+    //PORTFOLIO PAGE ONLY 
+
     return (
-      <>
-        {/* <p>/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /</p>
+      <div className="gradient">
+        <Header />
+        <Portfolio />
+      </div>
+    )
 
-      <h1>Portfolio Under Construction</h1>
-      
-      <p>/ / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /</p> */}
-        <LandingPage landingToggle={this.state.landing} click={this.handleLanding}/>
+    // if (this.state.landing === 'on') {
+    //   return (
+    //     <>
+    //       <div className="gradient">
+    //       </div>
 
-        {/* <Footer/> */}
+    //       <LandingPage landingToggle={this.state.landing} click={this.handleLanding} />
+    //     </>
+    //   )
 
-      </>
+    // }
 
-    );
+    // if (this.state.landing === 'off') {
+    //   return (
+    //     <>
+    //       <div className="gradient">
+    //       </div>
+    //       <Header />
+    //       <Portfolio />
+    //     </>
+    //   )
+    // }
   }
 }
 
