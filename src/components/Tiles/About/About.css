@@ -1,14 +1,16 @@
-.about-container {
+
+/* PREVIEW */
+.about-prev-container {
     margin-top: 0;
     width: 240px;
-    height: 280px;
+    height: 300px;
     border: white 2px solid;
     border-radius: 20px;
     box-shadow: 4px 5px rgba(255, 255, 255, 0.322);
     padding: 2px;
 }
 
-.about-container h4 {
+.about-prev-container h4 {
     width: 200px;
     color: white;
     font-family: 'Antic Didone',
@@ -19,7 +21,7 @@
     font-size: 25px;
     margin: auto;
     margin-bottom: 5px;
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 .headshot {
@@ -30,14 +32,68 @@
     margin: auto;
 }
 
-.about-container p {
+.about-prev-container p {
     font-size: 12px;
     text-transform: uppercase;
     width: 200px;
     margin: auto;
-    margin-top: 0;
+    margin-top: 5px;
     text-align: right;
     margin-bottom: 35px;
     height: fit-content;
     color: rgb(255, 248, 248)
+}
+
+/* FULL VIEW */
+
+.about-full-container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: white 2px solid;
+}
+
+.about-full-container h3 {
+            color: white;
+            font-family: 'Antic Didone',
+            serif;
+            text-transform: uppercase;
+            letter-spacing: 5px !important;
+            font-weight: lighter;
+            font-size: 25px;
+            margin: auto;
+            margin-bottom: 5px;
+            text-align: center;
+
+}
+
+.about-full-container .headshot {
+
+
+}
+
+.about-full-container p {
+        font-size: 12px;
+        text-transform: lowercase;
+        margin: auto;
+        text-align: left;
+        margin-bottom: 35px;
+        height: fit-content;
+        color: rgb(255, 248, 248)
+
+}
+.full-view-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+}
+
+.full-view-right{
+    display: flex;
+    align-items: center;
+    width: 40%;
 }
