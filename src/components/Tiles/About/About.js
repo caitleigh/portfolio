@@ -22,39 +22,36 @@ const About = () => {
   return (
     //FULL VIEW
     <div className="about-full-container">
+      <h3>About Cait</h3>
       <div className="full-view-left">
-        <h3>About Cait</h3>
-        <div className="headshot"></div>
+        <div className="headshot" />
       </div>
       <div className="full-view-right">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Fringilla
-          urna porttitor rhoncus dolor purus non. Velit ut tortor pretium
-          viverra suspendisse potenti. Sapien eget mi proin sed libero enim sed
-          faucibus turpis. Aliquam ultrices sagittis orci a scelerisque purus
-          semper eget. Arcu non sodales neque sodales ut etiam sit amet. Vivamus
-          at augue eget arcu dictum varius duis at. Quisque egestas diam in arcu
-          cursus euismod quis viverra. Nisl nisi scelerisque eu ultrices vitae.
-          Ut aliquam purus sit amet luctus venenatis lectus magna fringilla. Sed
-          turpis tincidunt id aliquet risus feugiat in ante. Nulla pellentesque
-          dignissim enim sit amet. Blandit aliquam etiam erat velit scelerisque
-          in dictum. Elit scelerisque mauris pellentesque pulvinar pellentesque
-          habitant morbi. Quam elementum pulvinar etiam non. Et netus et
-          malesuada fames ac turpis egestas sed. Id neque aliquam vestibulum
-          morbi blandit. Nulla aliquet enim tortor at auctor urna nunc id
-          cursus. Sit amet nulla facilisi morbi tempus iaculis urna id volutpat.
-          Diam in arcu cursus euismod quis viverra nibh cras pulvinar. Ornare
-          arcu odio ut sem nulla. Ornare suspendisse sed nisi lacus. Consectetur
-          adipiscing elit ut aliquam purus sit amet luctus venenatis. Volutpat
-          sed cras ornare arcu. A diam sollicitudin tempor id eu. Justo laoreet
-          sit amet cursus sit amet dictum sit amet. Libero justo laoreet sit
-          amet cursus sit amet. Commodo sed egestas egestas fringilla phasellus
-          faucibus scelerisque. Donec et odio pellentesque diam volutpat commodo
-          sed. Cras fermentum odio eu feugiat. Diam maecenas sed enim ut sem
-          viverra aliquet. Vitae justo eget magna fermentum iaculis eu non diam.
-          Non tellus orci ac auctor. Vitae nunc sed velit dignissim sodales ut
-          eu. Sed nisi lacus sed viverra tellus. Sit amet aliquam id diam.
+          I come from a background in finance, sales and marketing. For a little
+          over 4 years I worked in the mortgage industry in both a marketing
+          capacity as well as a loan officer assistant, which helped me improve
+          on my analytical and problem solving skills as well as anticipating
+          customer needs. After awhile, things started to get stagnant and there
+          were limited growth opportunities for me outside of becoming a loan
+          officer so I took a step back to reevaluate what I wanted to do and
+          what I wanted my future to look like.
+        </p>
+
+        <p>
+          I’ve always been kind of techy so I decided to take a crash course in
+          coding and was immediately hooked. I love that it helps me improve
+          upon my problem solvings skills and that I can also bring in my
+          creative side with front-end development while collaborating with
+          others on new ideas and challenging myself on a daily basis.
+        </p>
+
+        <p>
+          What really drew me to this industry and what sparked that passion in
+          me again is the endless learning possibilities. No matter how much you
+          already know, there is more to learn, skills to improve on and new
+          ways to challenge yourself and to be a part of an industry that is
+          changing the world is really exciting.
         </p>
       </div>
     </div>

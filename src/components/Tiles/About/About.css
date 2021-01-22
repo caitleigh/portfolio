@@ -1,4 +1,3 @@
-
 /* PREVIEW */
 .about-prev-container {
     margin-top: 0;
@@ -46,54 +45,60 @@
 
 /* FULL VIEW */
 
-.about-full-container{
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        border: white 2px solid;
+.about-full-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: auto;
+    padding: 30px;
+    align-items: center;
+    border: white 2px solid;
 }
 
 .about-full-container h3 {
-            color: white;
-            font-family: 'Antic Didone',
-            serif;
-            text-transform: uppercase;
-            letter-spacing: 5px !important;
-            font-weight: lighter;
-            font-size: 25px;
-            margin: auto;
-            margin-bottom: 5px;
-            text-align: center;
-
+    width: 100%;
+    color: white;
+    font-family: 'Antic Didone',
+        serif;
+    text-transform: uppercase;
+    letter-spacing: 5px !important;
+    font-weight: lighter;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .about-full-container .headshot {
-
-
+    width: 400px;
+    height: 275px;
 }
 
 .about-full-container p {
-        font-size: 12px;
-        text-transform: lowercase;
-        margin: auto;
-        text-align: left;
-        margin-bottom: 35px;
-        height: fit-content;
-        color: rgb(255, 248, 248)
-
+    font-size: 15px;
+    /* text-transform: lowercase; */
+    margin: auto;
+    text-align: left;
+    margin-bottom: 35px;
+    height: fit-content;
+    color: rgb(255, 248, 248)
 }
-.full-view-left{
+
+.full-view-left {
     display: flex;
+    align-self: flex-start;
     flex-direction: column;
-    align-items: center;
-    width: 40%;
+    align-items: flex-start;
+    min-width: 200px;
+    width: 400px;
 }
 
-.full-view-right{
+.full-view-right {
     display: flex;
-    align-items: center;
-    width: 40%;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 50%;
 }
