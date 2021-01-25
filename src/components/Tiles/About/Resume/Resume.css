@@ -1,0 +1,40 @@
+.resume {
+    border: white 1px solid;
+    font-family: 'Open Sans',
+    sans-serif;
+    padding: 20px;
+}
+
+.gdrive-button {
+    background-color: white;
+    border: white 1px solid;
+    border-radius: 10px;
+    color: black;
+    padding: 3px;
+    float: right;
+    margin: 5px;
+}
+
+
+.outside-link {
+    text-decoration: underline;
+    color: #a3a3a3;
+}
+
+.outside-link:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.resume-intro {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.resume ul{
+    list-style: none;
+}
+
+.bulleted-li {
+    list-style: inside;
+}
