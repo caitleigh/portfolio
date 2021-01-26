@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Portfolio.css'
 
 //Tiles
 import About from '../Tiles/About/About'
 
+
+
 const Portfolio = () => {
+    
 
     //TO DO: 
         //1: Build About Me Tile (on click goes from preview to full view)
@@ -16,7 +19,7 @@ const Portfolio = () => {
             <div className="tiles"> 
             <About/>
             </div>
-        </div>
+            </div>
 
     )
 

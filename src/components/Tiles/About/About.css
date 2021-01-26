@@ -58,6 +58,16 @@
     padding: 30px;
     align-items: center;
     border: white 2px solid;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
 }
 
 .about-full-container h3 {
@@ -109,3 +119,21 @@
     height: 100%;
     color: white;   
 }
+
+.view-button {
+    width: 100%;
+        font-size: 12px;
+        text-transform: uppercase;
+        /* width: 200px; */
+        /* margin: auto; */
+        margin-top: 5px;
+        margin-right: 15px;
+        text-align: right;
+        margin-bottom: 35px;
+        height: fit-content;
+        color: rgb(255, 248, 248);
+        background-color: transparent;
+        border: none;
+        float: right;
+}
+

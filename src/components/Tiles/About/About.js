@@ -10,7 +10,9 @@ import Resume from './Resume/Resume'
 
 //Add on Click Functionality
 
-const About = () => {
+
+
+const About = (props) => {
 
     const [view, setView] = useState("preview")
 
@@ -22,7 +24,7 @@ const About = () => {
                 <div className="about-prev-container">
                     <h4>About Cait</h4>
                     <div className="headshot" />
-                    <button onClick={() => setView("full-view")}>Learn More</button>
+                    <button className="view-button" onClick={() => setView("full-view")}>Learn More</button>
                 </div>
             )
         }
@@ -30,7 +32,7 @@ const About = () => {
             return (
                 //FULL VIEW
                 <div className="about-full-container">
-                    <button onClick={()=> setView("preview")}> Return to Home</button>
+                    <button className="view-button" onClick={()=> setView("preview")}> Return to Home</button>
                     <h3>About Cait</h3>
                     <div className="full-view-left">
                         <div className="headshot" />
@@ -126,5 +128,7 @@ const About = () => {
 //     </div>
 //   );
 };
+
+
 
 export default About;

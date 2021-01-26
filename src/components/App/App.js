@@ -1,6 +1,9 @@
 import React from 'react';
 import './App.css';
 
+import { Provider } from 'react-redux'
+import store from '../../Store/index'
+
 //components 
 
 import LandingPage from '../LandingPage/LandingPage'
@@ -43,10 +46,12 @@ class App extends React.Component {
     //PORTFOLIO PAGE ONLY 
 
     return (
+      // <Provider store={store}>
       <div className="gradient">
         <Header />
         <Portfolio />
-      </div>
+        </div>
+        // </Provider>
     )
 
     // if (this.state.landing === 'on') {
