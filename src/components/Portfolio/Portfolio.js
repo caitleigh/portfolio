@@ -1,8 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Portfolio.css'
 
 //Tiles
 import About from '../Tiles/About/About'
+import TBD from '../Tiles/TBD/TBD'
+
+import Contact from '../Tiles/Contact/Contact'
 
 
 
@@ -17,8 +20,10 @@ const Portfolio = () => {
     return (
         <div className="homePage">
             <div className="tiles"> 
-            <About/>
+                <About />
+                <TBD />
             </div>
+                <Contact />
             </div>
 
     )

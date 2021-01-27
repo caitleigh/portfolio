@@ -1,0 +1,41 @@
+.contact {
+    width: 80%;
+    color: white;
+    border: white solid 1px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.contact h3 {
+    width: 100%;
+    color: white;
+    font-family: 'Antic Didone',
+        serif;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px !important;
+    font-weight: lighter;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.contact-form h2, Label{
+    color: white
+}
+
+.contact-icon{
+    height: 45px;
+    margin: auto;
+}
+
+.contact-icon:hover {
+    cursor: pointer;
+}
+
+.icons-section {
+    display: flex;
+    width: 20%;
+    margin: 30px auto 0 auto;
+    justify-content: center;
+}

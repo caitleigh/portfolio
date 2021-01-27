@@ -21,10 +21,10 @@ const About = (props) => {
         if (view === "preview") {
             return (
                 //     //PREVIEW
-                <div className="about-prev-container">
+                <div className="about-prev-container" onClick={() => setView("full-view")}>
                     <h4>About Cait</h4>
                     <div className="headshot" />
-                    <button className="view-button" onClick={() => setView("full-view")}>Learn More</button>
+                    <button className="view-button">Learn More</button>
                 </div>
             )
         }

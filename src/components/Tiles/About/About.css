@@ -9,6 +9,10 @@
     padding: 2px;
 }
 
+.about-prev-container:hover {
+    cursor: pointer;
+}
+
 .about-prev-container h4 {
     width: 200px;
     color: white;
@@ -46,7 +50,8 @@
 /* FULL VIEW */
 
 .about-full-container {
-    width: 80%;
+    background-color: rgba(32, 32, 32, 0.733);
+    width: 100%;
     overflow: visible;
     height: 100%;
     display: flex;
@@ -54,10 +59,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: stretch;
-    margin: auto;
+    margin: 0 auto 30px auto;
     padding: 30px;
     align-items: center;
-    border: white 2px solid;
+    border-top: white 2px solid;
+    border-bottom: white 2px solid;
+
     animation: fadeIn 2s;
 }
 
@@ -117,6 +124,7 @@
 
 .resume-container {
     height: 100%;
+    width: 100%;
     color: white;   
 }
 
