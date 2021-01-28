@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+// import activeTile from '../../../Hooks/activeTile'
+
 import "./About.css";
 
 import Resume from './Resume/Resume'
@@ -14,25 +16,26 @@ import Resume from './Resume/Resume'
 
 const About = (props) => {
 
-    const [view, setView] = useState("preview")
-
-    //handle toggle view 
-
-        if (view === "preview") {
+        if (props.active === "preview") {
             return (
                 //     //PREVIEW
-                <div className="about-prev-container" onClick={() => setView("full-view")}>
+                <div className="about-prev-container" onClick={() => {
+                    props.viewFunction("full-view")
+                    props.tileName('about')
+                }}>
                     <h4>About Cait</h4>
                     <div className="headshot" />
                     <button className="view-button">Learn More</button>
                 </div>
             )
         }
-        if (view === "full-view") {
+        if (props.active === "full-view") {
             return (
                 //FULL VIEW
                 <div className="about-full-container">
-                    <button className="view-button" onClick={()=> setView("preview")}> Return to Home</button>
+                    <button className="view-button"
+                        onClick={() => props.viewFunction("preview")}
+                    > Return to Home</button>
                     <h3>About Cait</h3>
                     <div className="full-view-left">
                         <div className="headshot" />

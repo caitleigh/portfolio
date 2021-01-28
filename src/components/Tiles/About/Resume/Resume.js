@@ -5,9 +5,7 @@ import "./Resume.css"
 const Resume = () => {
     return (
         <div className="resume">
-            <div>
-                <button className="gdrive-button" onClick={() => window.open("https://docs.google.com/document/d/1tNZG_X6guDh-A93qtJHV6ly-nMWcNVVc4-d86V_ARMw/edit?usp=sharing")}>Click to view full resume</button>
-            </div>
+            <h3>Resume</h3>
 
             <div className="resume-intro">
                 <p>JavaScript developer with a background in finance, sales, and marketing. Passionate about learning and collaborating with others to develop creative and effective solutions to bring designs to life and deliver a seamless user experience.</p>
@@ -168,7 +166,10 @@ const Resume = () => {
                     </li>
                 </ul>
             </div>
+            <div>
+                <button className="gdrive-button" onClick={() => window.open("https://docs.google.com/document/d/1tNZG_X6guDh-A93qtJHV6ly-nMWcNVVc4-d86V_ARMw/edit?usp=sharing")}>Click to view full resume</button>
 
+            </div>
 
         </div>
     );

@@ -13,3 +13,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.hide {
+    background-color: red;
+}
