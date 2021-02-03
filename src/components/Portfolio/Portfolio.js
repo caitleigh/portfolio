@@ -11,29 +11,28 @@ import Contact from '../Tiles/Contact/Contact'
 
 const Portfolio = (props) => {
 
-    let [activeTile, setActive] = useState('preview')
+    let [activeView, setActive] = useState('preview')
     
-    console.log(activeTile)
+    let [activeTile, setActiveTile] = useState('')
 
     let [addClassName, setClassName] = useState('')
 
-    let [tileName, setTileName] = useState('')
 
     function setView(tile) {
-        console.log(tile)
-        setActive(tile)
-        if (activeTile === tile) {
-            setClassName('hide')
-        }
+        setActive(tile);
     }
 
     function setTile(tileName) {
-        setTileName(tileName)
+        setActiveTile(tileName)
     }
 
-    console.log(tileName)
-    console.log(addClassName)
-    
+    function toggleClass(viewName) {
+        setClassName(viewName)
+    }
+
+
+    console.log('className 33', addClassName)
+    console.log('activeTile', activeTile)
 
 
     //TO DO: 
@@ -45,14 +44,15 @@ const Portfolio = (props) => {
         <div className="homePage">
             <div className="tiles"> 
                 <About
-                    active={activeTile}
+                    active={activeView}
                     tileName={setTile}
                     viewFunction={setView}
-                    // className={addClassName}
+                    // onClick={setTile}
+                    addClassName={addClassName}
+                    toggleClass={toggleClass}
                 />
                 <TBD
-                    className={addClassName}
-
+                    addClassName={addClassName}
                 />
             </div>
                 <Contact />
