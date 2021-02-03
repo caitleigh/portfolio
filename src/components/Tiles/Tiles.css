@@ -1,5 +1,4 @@
-/* PREVIEW */
-/* .about-prev-container {
+.prev-container {
     margin-top: 0;
     width: 240px;
     height: 300px;
@@ -7,13 +6,13 @@
     border-radius: 20px;
     box-shadow: 4px 5px rgba(255, 255, 255, 0.322);
     padding: 2px;
-} */
+}
 
 .prev-container:hover {
     cursor: pointer;
 }
 
-/* .about-prev-container h4 {
+.prev-container h4 {
     width: 200px;
     color: white;
     font-family: 'Antic Didone',
@@ -25,18 +24,9 @@
     margin: auto;
     margin-bottom: 5px;
     margin-top: 25px;
-} */
-
-.headshot {
-    width: 200px;
-    height: 175px;
-    background-image: url("../../../Assets/imgs/headshot.jpg") !important;
-    background-size: cover;
-    margin: auto;
-    border-radius: 5px;
 }
 
-/* .about-prev-container p {
+.prev-container p {
     font-size: 12px;
     text-transform: uppercase;
     width: 200px;
@@ -46,11 +36,9 @@
     margin-bottom: 35px;
     height: fit-content;
     color: rgb(255, 248, 248)
-} */
+}
 
-/* FULL VIEW */
-
-/* .about-full-container {
+.full-container {
     background-color: rgba(32, 32, 32, 0.507);
     width: 100%;
     overflow: visible;
@@ -72,12 +60,13 @@
     from {
         opacity: 0%;
     }
+
     to {
         opacity: 100%;
     }
-} */
+}
 
-/* .about-full-container h3 {
+.full-container h3 {
     width: 100%;
     color: white;
     font-family: 'Antic Didone',
@@ -89,58 +78,22 @@
     font-size: 25px;
     margin: auto;
     margin-bottom: 20px;
-} */
-
-.full-container .headshot {
-    width: 400px;
-    height: 275px;
 }
 
-/* .about-full-container p {
+.full-container p {
     font-size: 15px;
+    /* text-transform: lowercase; */
     margin: auto;
     text-align: left;
     margin-bottom: 35px;
     height: fit-content;
     color: rgb(255, 248, 248)
-} */
-
-.full-view-left {
-    display: flex;
-    align-self: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    min-width: 200px;
-    width: 400px;
 }
 
-.full-view-right {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 50%;
+.hide {
+    display: none;
 }
 
-.resume-container {
-    height: 100%;
-    width: 100%;
-    color: white;   
+.show {
+    display: block;
 }
-
-.view-button {
-    width: 100%;
-        font-size: 12px;
-        text-transform: uppercase;
-        /* width: 200px; */
-        /* margin: auto; */
-        margin-top: 5px;
-        margin-right: 15px;
-        text-align: right;
-        margin-bottom: 35px;
-        height: fit-content;
-        color: rgb(255, 248, 248);
-        background-color: transparent;
-        border: none;
-        float: right;
-}
-

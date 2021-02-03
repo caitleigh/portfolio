@@ -1,0 +1,25 @@
+.prev-container h4 {
+    width: 200px;
+    color: white;
+    font-family: 'Antic Didone',
+        serif;
+    text-transform: uppercase;
+    letter-spacing: 5px !important;
+    font-weight: lighter;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-top: 25px;
+}
+
+.tbd:hover{
+    cursor: default;
+
+}
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
