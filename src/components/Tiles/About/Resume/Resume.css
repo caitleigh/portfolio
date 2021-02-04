@@ -38,3 +38,11 @@
 .bulleted-li {
     list-style: inside;
 }
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}

@@ -34,8 +34,8 @@ const About = (props) => {
     }
     if (props.active === "full-view") {
         return (
-                //FULL VIEW
-                <div className="full-container">
+            //FULL VIEW
+            <div className="full-container">
                 <button className="view-button"
                     onClick={() => {
                         props.viewFunction("preview", "")
@@ -43,46 +43,29 @@ const About = (props) => {
                         props.tileName('about')
 
                     }}
-                    > Return to Home</button>
-                    <h3>About Cait</h3>
-                    <div className="full-view-left">
-                        <div className="headshot" />
-                    </div>
-                    <div className="full-view-right">
-                        <p>
-                    I come from a background in finance, sales and marketing. For a little
-                    over 4 years I worked in the mortgage industry in both a marketing
-                    capacity as well as a loan officer assistant, which helped me improve
-                    on my analytical and problem solving skills as well as anticipating
-                    customer needs. After awhile, things started to get stagnant and there
-                    were limited growth opportunities for me outside of becoming a loan
-                    officer so I took a step back to reevaluate what I wanted to do and
-                    what I wanted my future to look like.
-        </p>
+                > Return to Home</button>
+                <h3>About Cait</h3>
+                <div className="full-view-left">
+                    <div className="headshot" />
+                </div>
+                <div className="full-view-right">
+                    <p>
+                        Cait was raised in the Seattle Washington area and attended the University of Idaho where she earned her bachelor's degree. During her time at Idaho, she competed as a Division I Track and Field athlete and was a member of Pi Beta Phi. </p>
+                    <p>
+                        For a little over 4 years, Cait worked in the mortgage industry in both a marketing capacity and as a loan officer assistant. Over the years, she was able to improve upon her analytical and problem solving skills while anticipating customer needs and providing a high level of customer service. After some time, she took a step back to look at her growth opportunites and reevaluated waht she wanted to do.</p>
 
-                        <p>
-                    I’ve always been kind of techy so I decided to take a crash course in
-                    coding and was immediately hooked. I love that it helps me improve
-                    upon my problem solvings skills and that I can also bring in my
-                    creative side with front-end development while collaborating with
-                    others on new ideas and challenging myself on a daily basis.
-        </p>
+                    <p> 
+                        In October of 2019, Cait began attending Code Fellows to develope the skills needed to become a software developer. During her time there, she was able to improve upon her problem solving skills while bringing in her creative side. She completed her certificate for Advanced Software Development in Full-Stack JavaScript in April 2020.</p>
+                    <p>
+                        What draws Cait to this industry and what sparks her passion is the endless learning possibilities. No matter how much you already know, there is more to learn, skills to improve on and new ways to challenge yourself and to be a part of an industry that is changing the world is really exciting.</p>
+                </div>
 
-                        <p>
-                    What really drew me to this industry and what sparked that passion in
-                    me again is the endless learning possibilities. No matter how much you
-                    already know, there is more to learn, skills to improve on and new
-                    ways to challenge yourself and to be a part of an industry that is
-                    changing the world is really exciting.
-        </p>
-                    </div>
-
-                    <div className="resume-container">
-                        <Resume />
-                    </div>
-                </div >
-            )
-        }
+                <div className="resume-container">
+                    <Resume />
+                </div>
+            </div >
+        )
+    }
 };
 
 
