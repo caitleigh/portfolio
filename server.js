@@ -33,8 +33,8 @@ app.post("/send", (req, res) => {
     var mail = {
         from: name,
         to: creds.USER,
-        subject: "Feedback From The Blog",
-        html: `${message}` + "<br><br>Kindly,<br>" + `${name}` + ` ${email}`
+        subject: "New Message from portolio site",
+        html: `${message}` + "<br><br>Contact:<br>" + `${name}` + "<br>" +` ${email}`
     };
 
     transporter.sendMail(mail, (err, data) => {

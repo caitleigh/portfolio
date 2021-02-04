@@ -15,20 +15,17 @@ const Resume = () => {
                 <h4>Technical Skills</h4>
                 <ul>
                     <li>
-                        <span className="bold">Languages:</span>
-            JavaScript, HTML, CSS, SQL
+                        <span className="bold">Languages: </span> JavaScript, HTML, CSS, SQL
           </li>
 
                     <li>
-                        <span className="bold">Tools & FrameWorks:</span>
-            React, Node, jQuery, SASS, Git, GitHub, NPM, Yarn, Redux, JSON,
+                        <span className="bold">Tools & FrameWorks: </span> React, Node, jQuery, SASS, Git, GitHub, NPM, Yarn, Redux, JSON,
             MongoDB, Express, Superagent, AJAX, APIs, Mongoose, Postman, REST,
             Google Firebase, Heroku, Visual Studio Code
           </li>
 
                     <li>
-                        <span className="bold">Additonal:</span>
-            Photoshop, Illustrator, Sketch, SEO
+                        <span className="bold">Additonal:</span> Photoshop, Illustrator, Sketch, SEO
           </li>
                 </ul>
             </div>
