@@ -22,7 +22,6 @@ const About = (props) => {
             //     //PREVIEW
             <div className={`prev-container ${props.addClassName}`
             }onClick={() => {
-                props.tileName('about')
                 props.viewFunction("full-view")
                 props.toggleClass("hide")
 
@@ -41,7 +40,6 @@ const About = (props) => {
                     onClick={() => {
                         props.viewFunction("preview", "")
                         props.toggleClass("show")
-                        props.tileName('about')
 
                     }}
                 > Return to Home</button>

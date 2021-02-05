@@ -97,7 +97,6 @@ const Bacchus = (props) => {
             //     //PREVIEW
             <div className={`prev-container ${props.addClassName}`}
             onClick={() => {
-                props.tileName('bacchus')
                 props.viewFunction("full-view")
                 props.toggleClass("hide")
 
@@ -120,8 +119,6 @@ const Bacchus = (props) => {
                     onClick={() => {
                         props.viewFunction("preview", "")
                         props.toggleClass("show")
-                        props.tileName('bacchus')
-
                     }}
                 > Return to Home</button>
                 <h3>Bacchus Influencer Platform</h3>
