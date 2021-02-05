@@ -1,0 +1,43 @@
+.carousel {
+    width: 80%;
+}
+
+.carousel h3 {
+    width: 120px;
+    text-align: center;
+}
+
+.carousel-caption {
+    position: static !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 3% !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    /* outline: black !important; */
+    background-color: black !important;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+}
+
+/* .carousel-control-next-icon:after {
+    content: '>';
+    font-size: 55px;
+    color: red;
+}
+
+.carousel-control-prev-icon:after {
+    content: '<';
+    font-size: 55px;
+    color: red;
+} */
+

@@ -20,7 +20,8 @@ const About = (props) => {
     if (props.active === "preview") {
         return (
             //     //PREVIEW
-            <div className="prev-container" onClick={() => {
+            <div className={`prev-container ${props.addClassName}`
+            }onClick={() => {
                 props.tileName('about')
                 props.viewFunction("full-view")
                 props.toggleClass("hide")
@@ -35,7 +36,7 @@ const About = (props) => {
     if (props.active === "full-view") {
         return (
             //FULL VIEW
-            <div className="full-container">
+            <div className={`full-container ${props.addClassName}`}>
                 <button className="view-button"
                     onClick={() => {
                         props.viewFunction("preview", "")
