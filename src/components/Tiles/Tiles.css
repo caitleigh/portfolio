@@ -39,7 +39,9 @@
 }
 
 .full-container {
-    background-color: rgba(32, 32, 32, 0.507);
+    /* background-color: rgba(32, 32, 32, 0.507); */
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 56%, rgba(255, 255, 255, 0.00043767507002800965) 100%);
     width: 100%;
     overflow: visible;
     height: 100%;

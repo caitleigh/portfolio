@@ -22,25 +22,33 @@ const Portfolio = (props) => {
     let [aboutView, setAboutView] = useState('')
 
     function aboutActive(viewName) {
+        console.log(viewName)
         setTBDView(viewName)
         setBacchusView(viewName)
+        setContactView(viewName)
 
     }
 
     let [tbdView, setTBDView] = useState('')
 
 
-    function hideTBD(viewName) {
-        setTBDView(viewName)
-        setAboutView(viewName)
-    }
+    // function hideTBD(viewName) {
+    //     setTBDView(viewName)
+    //     setAboutView(viewName)
+    // }
 
     let [baccusView, setBacchusView] = useState('')
 
 
     function activeBacchus(viewName) {
         setTBDView(viewName)
-        setAboutView(viewName)    }
+        setAboutView(viewName)
+        setContactView(viewName)
+    }
+    
+    let [contactView, setContactView] = useState('')
+
+
 
 
 
@@ -72,7 +80,9 @@ const Portfolio = (props) => {
                 />
 
             </div>
-                <Contact />
+            <Contact
+                addClassName={contactView}
+            />
             </div>
 
     )

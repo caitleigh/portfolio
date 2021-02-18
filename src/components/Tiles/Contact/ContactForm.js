@@ -6,7 +6,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 
 import './Contact.css'
 
-export const ContactForm = () => {
+export const ContactForm = (props) => {
 
     const initialContactState = { name: "", message: "", email: "" };
     const [newMessage, setNewMessage] = useState(initialContactState);
@@ -36,14 +36,14 @@ export const ContactForm = () => {
     }
 
     return (
-        <div>
+        <div className={props.hideClassName}>
             <Row>
                 <Col sm="12" md={{ size: 10, offset: 1 }} className="text-center mt-4">
                     <h3>Send a Message</h3>
                 </Col>
             </Row>
 
-            <Form>
+            <Form className={props.hideClassName}>
                 <Row>
                     <Col sm="12" md={{ size: 10, offset: 1 }}>
                     <Row form>
